@@ -16,10 +16,10 @@
 public class Program
 {
     // Replace <documentEndpoint> with the information created earlier
-    private static readonly string EndpointUri = "https://elipskicosmosdb.documents.azure.com:443/";
+    private static readonly string EndpointUri = "<endpoint URI>";
 
     // Set variable to the Primary Key from earlier.
-    private static readonly string PrimaryKey = "w0DAGsVUeOtqTLSP4uVpk1sdgV5aeqHrocsfRLsHZn1vU7F1L5SGblEr1dHjCjsUtBl1kkZo4ab6ACDbB7XX7Q==";
+    private static readonly string PrimaryKey = "<Primary Key>";
 
     // The Cosmos client instance
     private CosmosClient cosmosClient;

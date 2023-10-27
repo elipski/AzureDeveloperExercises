@@ -5,8 +5,8 @@ namespace az204_auth
 {
     class Program{
 
-    private const string _clientId = "3c9d940c-5405-4310-b4c6-973b0f2bcf5a";
-    private const string _tenantId = "f7aa6e8f-547c-4b9b-abc2-7dd1ec4ce92b";
+    private const string _clientId = "<Ckient ID>";
+    private const string _tenantId = "<Tenant ID>";
         public static async Task Main(string[] args){
             var app = PublicClientApplicationBuilder
                     .Create(_clientId)
@@ -16,7 +16,7 @@ namespace az204_auth
             string[] scopes = { "user.read" };
             AuthenticationResult result = await app.AcquireTokenInteractive(scopes).ExecuteAsync();
 
-            Console.WriteLine($"Token:\t{result.AccessToken}");
+            Console.WriteLine($"Token:\t {result.AccessToken} ");
 
         }
     }
